@@ -2,7 +2,7 @@ const currentElement = document.querySelector(".list");
 
 function firstAppend() {
   const firstNewEl = document.createElement("p");
-  const firstNewElText = document.createTextNode("This is added");
+  const firstNewElText = document.createTextNode("Get married");
   firstNewEl.appendChild(firstNewElText);
 
   currentElement.append(firstNewEl);
@@ -10,7 +10,9 @@ function firstAppend() {
 
 function secondAppend() {
   const newElement = document.createElement("p");
-  const newElementText = document.createTextNode("second text append");
+  const newElementText = document.createTextNode(
+    "Visit a place colder than -25 degrees"
+  );
 
   newElement.appendChild(newElementText);
 
@@ -23,7 +25,7 @@ function thirdAssignment() {
 }
 
 function htmlString() {
-  const htmlListItem = "<p>added list item nr 3</p>";
+  const htmlListItem = "<p>See a waterfall with my own eyes</p>";
 
   //doing currentElement.innerHTML = htmlListItem; will replace all the current text in the element.
   //Instead we could try using a += sign, to append the html text to the existing text. Like this:
